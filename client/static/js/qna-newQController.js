@@ -21,7 +21,7 @@ app.controller('newQuestionController', ['$scope', '$location', 'userService', '
     if (!$scope.new['question']){
       $scope.newQError = "The question cannot be empty"
     } else if ($scope.new['question'].length < 10){
-      $scope.newError = "Too short to be considered a question. Must be atleast 10 characters long"
+      $scope.newQError = "Too short to be considered a question. Must be atleast 10 characters long"
     } else {
       $scope.newQError = ''
       factory.add(serverRoute, $scope.new)
