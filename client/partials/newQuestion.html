@@ -1,0 +1,23 @@
+<div class="newQ">
+  <header>
+    <button type="button" ng-click="goHome()">Home</button>
+    <button type="button" ng-click="logout()">Logout</button>
+  </header>
+
+  <h1>New Question</h1>
+
+  <form>
+    <label>
+      Question: <textarea ng-model="new['question']"></textarea>
+    </label>
+    <label>
+      Description: <textarea ng-model="new['desc']"></textarea>
+    </label>
+    <p class="error" ng-show="newQError">{{ newQError }}</p>
+    <label>
+      <button type="button" ng-click="goHome()">Cancel</button>
+      <button type="button" ng-click="submit()">Submit</button>
+    </label>
+  </form>
+
+</div>

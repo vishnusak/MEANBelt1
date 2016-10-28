@@ -1,0 +1,31 @@
+<div class="showQ">
+  <header>
+    <div class="left">
+      <button type="button" ng-click="goHome()">Home</button>
+      <h1>|</h1>
+      <button type="button" ng-click="answerQuestion(qid)">Answer this Question</button>
+    </div>
+    <button type="button" ng-click="logout()">Logout</button>
+  </header>
+
+  <p class="error" ng-show="error">{{ error }}</p>
+
+  <div ng-hide="error">
+    <h1>{{ question }}</h1>
+    <h3>{{ desc }}</h3>
+
+    <div class="answers" ng-repeat="answer in answers | orderBy:'-likes'">
+
+      <div class="left">
+        <h3>{{ answer['userName'] }}</h3>
+        <p>{{ answer['answer'] }}</p>
+        <p class="details" ng-show="answer['details']">{{ answer['details'] }}</p>
+      </div>
+      <div class="right">
+        <p><span>{{ answer['likes'] }}</span> likes</p>
+        <button type="button" ng-click="addLike(answer['_id'])">Like</button>
+      </div>
+    </div>
+  </div>
+
+</div>

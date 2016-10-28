@@ -1,0 +1,264 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Josefin Slab', serif;
+  font-size: 16px;
+  background: rgb(240, 240, 240);
+  background: linear-gradient(rgb(235, 235, 235), rgb(250, 250, 250));
+  background-attachment: fixed;
+}
+
+.error{
+  color: red;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  margin: 1vh auto;
+}
+
+.login{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+  .login > h1{
+    padding: 1vh 1vw;
+    margin: 0 0 2vh 0;
+    background-color: rgb(50, 100, 255);
+    color: white;
+  }
+  .login > form{
+    width: 50%;
+    padding: 1vh 1vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 0 3vh 0 rgb(50, 100, 255);
+  }
+    .login > form > label{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+      margin: 0 0 1vh 0;
+    }
+      .login > form > label > input{
+        width: 80%;
+        padding: 0.5vh 0.5vw;
+      }
+    .login > form > input{
+      padding: 0.5vh 0.5vw;
+      font-weight: bold;
+      border-color: rgb(50, 100, 255);
+      background-color: rgb(50, 100, 255);
+      color: white;
+      align-self: center;
+    }
+
+.dashboard{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+  .dashboard > header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(50, 100, 255);
+    color: white;
+    padding: 1vh 1vw;
+    margin: 0 0 2vh 0;
+  }
+  .dashboard button{
+    padding: 0.5vh 0.5vw;
+    font-weight: bold;
+    border-color: rgb(50, 100, 255);
+    background-color: rgb(50, 100, 255);
+    color: white;
+  }
+  #action-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 1vw;
+    margin: 0 0 2vh 0;
+    border: 1px solid rgb(50, 100, 255);
+  }
+    #action-bar > label{
+      font-weight: bold;
+    }
+      #action-bar > label > input{
+        padding: 0.5vh 0.5vw;
+      }
+  .dashboard > table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+  }
+    .dashboard > table th,
+    .dashboard > table td{
+      border: 1px solid rgb(50, 100, 255);
+      padding: 0.5vh 0.5vw;
+      text-align: center;
+    }
+    .dashboard > table th{
+      background-color: rgb(50, 100, 255);
+      color: white;
+      font-size: 120%;
+    }
+    .dashboard > table td{
+      font-weight: bold;
+    }
+    .dashboard > table tr > td:first-of-type{
+      text-align: left;
+    }
+    .dashboard > table tr > td:last-of-type{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+.newQ,
+.newA{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+  .newQ > header,
+  .newA > header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(50, 100, 255);
+    color: white;
+    padding: 1vh 1vw;
+    margin: 0 0 2vh 0;
+  }
+    .newA > header > .left{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  .newQ button,
+  .newA button{
+    padding: 0.5vh 0.5vw;
+    font-weight: bold;
+    border-color: rgb(50, 100, 255);
+    background-color: rgb(50, 100, 255);
+    color: white;
+  }
+  .newQ > h1,
+  .newA > h1{
+    text-align: center;
+  }
+  .newQ > form,
+  .newA > form{
+    width: 50%;
+    padding: 1vh 1vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 0 3vh 0 rgb(50, 100, 255);
+  }
+    .newQ > form > label,
+    .newA > form > label{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+      margin: 0 0 1vh 0;
+    }
+      .newQ > form > label > textarea,
+      .newA > form > label > textarea{
+        width: 80%;
+        padding: 0.5vh 0.5vw;
+        height: 10vh;
+        resize: none;
+      }
+
+.showQ{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+  .showQ > header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(50, 100, 255);
+    color: white;
+    padding: 1vh 1vw;
+    margin: 0 0 2vh 0;
+  }
+    .showQ > header > .left{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  .showQ button{
+    padding: 0.5vh 0.5vw;
+    font-weight: bold;
+    border-color: rgb(50, 100, 255);
+    background-color: rgb(50, 100, 255);
+    color: white;
+  }
+  .showQ h1,
+  .showQ h3{
+    text-align: center;
+  }
+  .showQ .answers{
+    margin: 3vh auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    font-weight: bold;
+    border-bottom: 1px ridge rgb(50, 100, 255);
+  }
+    .answers h3{
+      color: rgb(50, 100, 255);
+      margin-bottom: 1vh;
+    }
+    .answers > .left{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 87%;
+      padding: 0 1vw;
+    }
+      .answers > .left > .details{
+        margin-top: 1vh;
+        font-style: italic;
+        color: blue;
+      }
+    .answers > .right{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 13%;
+      padding: 0 1vw;
+    }
+      .answers .right span{
+        color: rgb(50, 100, 255);
+      }
