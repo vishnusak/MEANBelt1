@@ -163,8 +163,12 @@ body{
     color: white;
   }
   .newQ > h1,
-  .newA > h1{
+  .newA > h1,
+  .newA > h3{
     text-align: center;
+  }
+  .newA > h3{
+    margin-bottom: 2vh;
   }
   .newQ > form,
   .newA > form{
